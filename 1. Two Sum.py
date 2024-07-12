@@ -1,8 +1,10 @@
 class Solution:
-    def twoSum(self, nums: list[int], target: int) -> list[int]:
-        seen = {}
-        for i, item in enumerate(nums):
-            remaining = target - item
-            if remaining in seen:
-                return [seen[remaining], i]
-            seen[item] = i
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        prevDiff = {}
+
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prevDiff.keys():
+                return [prevDiff[diff], i]
+            prevDiff[n] = i
+        return 

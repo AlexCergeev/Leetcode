@@ -15,3 +15,4 @@ class Solution:
             else:
                 r = m - 1
         return res
+    

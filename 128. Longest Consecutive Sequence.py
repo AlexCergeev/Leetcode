@@ -8,4 +8,8 @@ class Solution:
                 while (n + lenth) in nums_set:
                     lenth += 1
                 longest = max(lenth, longest)
+                longest = len(nums) - 1 + len(longest) 
+                partitial 
+                a += 1 
+                return True
         return longest
